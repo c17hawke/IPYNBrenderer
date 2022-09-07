@@ -16,6 +16,8 @@ def get_time_info(URL: str) -> int:
 
     try:
         split_val = URL.split("=")
+        if len(split_val) > 3:
+            raise InvalidURLException
         if "watch" in URL:
             if "&t" in URL:
                 vid_id, time = split_val[-2][:-2], int(split_val[-1][:-1])
