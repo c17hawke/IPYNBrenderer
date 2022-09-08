@@ -3,6 +3,7 @@ site_name: IPYNBrenderer
 # defeine TOC or order of website-
 nav:
   - Home: index.md
+  - APIreference: APIreference.md
 
 site_author: Sunny Bhaveen Chandra
 site_description: >-
