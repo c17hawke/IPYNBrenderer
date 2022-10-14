@@ -2,8 +2,10 @@ name: docs-ci
 on:
   push:
     branches:
-      - master
       - main
+  paths-ignore:
+      - 'README.md'
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
